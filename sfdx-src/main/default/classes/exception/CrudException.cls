@@ -25,9 +25,12 @@
 **/
 
 /**
-  * CrudException represents a running user's lack of read/create/update/delete access at a profile (or permission set)
-  * level. Sharing and field level security issues will never cause this.
-  **/
+* @author Rahul Chaudhary <rahulchaudharyofficial@outlook.com>
+* @version 1.0
+* 
+* CrudException represents a running user's lack of read/create/update/delete access at a profile (or permission set)
+* level. Sharing and field level security issues will never cause this.
+*/
 public class CrudException extends SecurityException {
     public CrudException(OperationType operation, Schema.SObjectType objectType) {
         this.operation = operation;

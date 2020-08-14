@@ -26,6 +26,10 @@
     
     
 /**
+ * 
+ * @author Rahul Chaudhary <rahulchaudharyofficial@outlook.com>
+ * @version 1.0
+ 
  * SecurityException is never be thrown directly by SecurityUtils, instead all 
  * forms of CRUD and FLD violations throw subclasses of it. It is provided as a convenience
  * in the event you wish to handle CRUD and FLS violations the same way (e.g. die and display an error)

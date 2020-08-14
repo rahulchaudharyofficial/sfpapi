@@ -24,6 +24,10 @@
  *  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 **/
 
+/**
+ * @author Rahul Chaudhary <rahulchaudharyofficial@outlook.com>
+ * @version 1.0
+ */
 public interface IPermissionService {
     /*
      * Object Level

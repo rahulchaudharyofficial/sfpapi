@@ -25,8 +25,11 @@
 **/
 
 /**
-    * FlsException represents a running user's lack of field level security to a specific field at a profile (or permission set) level
-    * Sharing and CRUD security issues will never cause this to be thrown.
+* @author Rahul Chaudhary <rahulchaudharyofficial@outlook.com>
+* @version 1.0
+
+* FlsException represents a running user's lack of field level security to a specific field at a profile (or permission set) level
+* Sharing and CRUD security issues will never cause this to be thrown.
 **/
 public class FLSException extends SecurityException {
 
