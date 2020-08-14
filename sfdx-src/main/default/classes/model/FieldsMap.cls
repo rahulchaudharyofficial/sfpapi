@@ -27,10 +27,20 @@
 /**
  * @author Rahul Chaudhary <rahulchaudharyofficial@outlook.com>
  * @version 1.0
- * 
- * This Util class provide methods to explore schema 
+ * A subclass of NamespacedAttributeMap for handling the data returned by #Schema.DescribeSObjectResult.fields.getMap
  */
 
-public class SObjectDescribeUtil {
-    
+public class FieldsMap extends NamespacedAttributeMap {
+    public FieldsMap(Map<String,Schema.SObjectField> values) {
+        super(values);
+    }
+    public Schema.SObjectField get(String name){
+        return this.get(name, true);
+    }
+    public Schema.SObjectField get(String name, Boolean implyNamespace){
+        return (Schema.SObjectField) this.getObject(name, implyNamespace);
+    }
+    public List<Schema.SObjectField> values(){
+        return (List<Schema.SObjectField>) values.values();
+    }
 }
