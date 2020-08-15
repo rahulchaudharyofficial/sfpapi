@@ -1,2 +1,6 @@
 String currentNamespace = NamespacedAttributeMap.class.getName().substringBefore(NamespacedAttributeMap.class.getName()).removeEnd('.').toLowerCase();
 System.debug('current namespace = '+ currentNamespace);
+
+
+
+System.debug(String.valueOf(Account.sObjectType));

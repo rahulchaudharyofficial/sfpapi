@@ -34,8 +34,11 @@ public interface ISObjectDescriberService {
     Schema.SObjectType getSObjectType();
     Schema.SObjectField getField(String name);
     Schema.SObjectField getField(String fieldName, Boolean implyNamespace);
-    Schema.SObjectField getNameField();
-    Map<String,Schema.SObjectType> rawGlobalDescribe();
-    //GlobalDescribeMap wrappedGlobalDescribe();
+    Schema.SObjectField getFieldName();
+    Schema.DescribeSObjectResult getDescribe();
+    Map<String,Schema.SObjectField> getFieldsMap();
+    FieldsMap getFields();
+    Map<String,Schema.FieldSet> getFieldSetsMap();
     void flushCache();
+    Map<String,Schema.SObjectType> getGlobalDescribe();
 }
